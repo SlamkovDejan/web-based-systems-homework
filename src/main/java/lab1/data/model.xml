@@ -1,0 +1,28 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://xmlns.com/foaf/0.1/">
+  <j.0:Project rdf:about="https://github.com/SlamkovDejan/ttmk">
+    <j.0:maker>
+      <j.0:Person rdf:about="https://www.linkedin.com/in/venko-stojanov-3970751b4">
+        <j.0:knows>
+          <j.0:Person rdf:about="https://www.linkedin.com/in/dejan-slamkov/">
+            <j.0:age>22</j.0:age>
+            <j.0:birthday>11-07</j.0:birthday>
+            <j.0:knows rdf:resource="https://www.linkedin.com/in/venko-stojanov-3970751b4"/>
+            <j.0:gender xml:lang="en">male</j.0:gender>
+            <j.0:name xml:lang="en">Dejan Slamkov</j.0:name>
+            <j.0:gender xml:lang="mk">машко</j.0:gender>
+            <j.0:schoolHomepage>
+              <j.0:Document rdf:about="https://finki.ukim.mk/en"/>
+            </j.0:schoolHomepage>
+            <j.0:made rdf:resource="https://github.com/SlamkovDejan/ttmk"/>
+            <j.0:pastProject rdf:resource="https://github.com/SlamkovDejan/ttmk"/>
+            <j.0:name xml:lang="mk">Дејан Сламков</j.0:name>
+          </j.0:Person>
+        </j.0:knows>
+        <j.0:maker rdf:resource="https://github.com/SlamkovDejan/ttmk"/>
+      </j.0:Person>
+    </j.0:maker>
+    <j.0:maker rdf:resource="https://www.linkedin.com/in/dejan-slamkov/"/>
+  </j.0:Project>
+</rdf:RDF>
