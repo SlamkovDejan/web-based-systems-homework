@@ -1,6 +1,5 @@
 package lab1;
 
-import com.fasterxml.jackson.databind.annotation.JsonAppend;
 import org.apache.jena.rdf.model.*;
 
 public class Task2 {

@@ -1,9 +1,6 @@
 package lab1;
 
-import org.apache.jena.base.Sys;
-import org.apache.jena.graph.Node;
 import org.apache.jena.graph.NodeFactory;
-import org.apache.jena.graph.Node_URI;
 import org.apache.jena.rdf.model.*;
 
 import java.util.ArrayList;
@@ -14,7 +11,6 @@ public class Task3 {
 
         Model model = ModelFactory.createDefaultModel();
         model.read("./src/main/java/lab1/data/hifm-dataset.ttl", "TTL");
-
 
         Property typeProp = model.getProperty("http://www.w3.org/1999/02/22-rdf-syntax-ns#type");
         RDFNode drugObject = model.getRDFNode(NodeFactory.createURI("http://wifo5-04.informatik.uni-mannheim.de/drugbank/resource/drugbank/drugs"));

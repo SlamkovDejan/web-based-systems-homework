@@ -11,7 +11,6 @@ import java.io.IOException;
 
 public class Task1 {
 
-
     public static void main(String[] args) {
 
         Model model = ModelFactory.createDefaultModel();
@@ -57,7 +56,7 @@ public class Task1 {
             System.out.println();
         }
 
-        File file = new File("C:\\Users\\Slamkov\\Desktop\\Java Projects\\Web Based Systems\\labs\\src\\main\\java\\lab1\\data\\model.xml");
+        File file = new File("./src/main/java/lab1/data/model.xml");
         if(!file.exists()){
             try {
                 file.createNewFile();
@@ -68,9 +67,6 @@ public class Task1 {
             }
         }
 
-
-
     }
-
 
 }
