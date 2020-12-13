@@ -1,0 +1,22 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://raw.githubusercontent.com/SlamkovDejan/web-based-systems-homework/master/src/main/java/lab5/data/foaf.ttl> a foaf:PersonalProfileDocument ;
+    foaf:maker <https://raw.githubusercontent.com/SlamkovDejan/web-based-systems-homework/master/src/main/java/lab5/data/foaf.ttl#me> ;
+    foaf:primaryTopic <https://raw.githubusercontent.com/SlamkovDejan/web-based-systems-homework/master/src/main/java/lab5/data/foaf.ttl#me> .
+
+<https://raw.githubusercontent.com/SlamkovDejan/web-based-systems-homework/master/src/main/java/lab5/data/foaf.ttl#me> a foaf:Person ;
+    foaf:depiction <https://media-exp1.licdn.com/dms/image/C4E03AQG3DeA9Q1XQeQ/profile-displayphoto-shrink_400_400/0/1607877134290?e=1613606400&v=beta&t=B7LdE6XXaXCOuFl08E42102tGAw_WNEDAkl-D4aOugE> ;
+    foaf:family_name "Slamkov" ;
+    foaf:givenname "Dejan" ;
+    foaf:homepage <https://www.linkedin.com/in/dejan-slamkov/> ;
+    # foaf:knows [ a foaf:Person ;
+            # rdfs:seeAlso <https://link.com/foaf.ttl> ;
+            # foaf:mbox_sha1sum "72e386da0359f3067f4ee210b86721e7c511814d" ;
+            # foaf:name "Someone" ] ;
+    foaf:mbox_sha1sum "992a6dd100e3872f8082c524219b600f8fa4de87" ;
+    foaf:name "Dejan Slamkov" ;
+    foaf:nick "Deki" ;
+    foaf:phone <tel:73222222> ;
+    foaf:schoolHomepage <https://finki.ukim.mk/> ;
+    foaf:title "Student" .
