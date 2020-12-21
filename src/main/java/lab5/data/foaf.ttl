@@ -10,10 +10,9 @@
     foaf:family_name "Slamkov" ;
     foaf:givenname "Dejan" ;
     foaf:homepage <https://www.linkedin.com/in/dejan-slamkov/> ;
-    # foaf:knows [ a foaf:Person ;
-            # rdfs:seeAlso <https://link.com/foaf.ttl> ;
-            # foaf:mbox_sha1sum "72e386da0359f3067f4ee210b86721e7c511814d" ;
-            # foaf:name "Someone" ] ;
+    foaf:knows [ a foaf:Person ;
+            rdfs:seeAlso <https://raw.githubusercontent.com/StojanovVenko/WBS_FOAF_profile/main/foaf.ttl> ;
+            foaf:name "Venko Stojanov" ] ;
     foaf:mbox_sha1sum "992a6dd100e3872f8082c524219b600f8fa4de87" ;
     foaf:name "Dejan Slamkov" ;
     foaf:nick "Deki" ;
