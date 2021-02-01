@@ -36,8 +36,9 @@ public class Task3 {
         Property similarToProp = model.getProperty("http://purl.org/net/hifm/ontology#similarTo");
         StmtIterator similarDrugs = oneDrug.listProperties(similarToProp);
         while (similarDrugs.hasNext()){
-            String similarDrugURI = similarDrugs.nextStatement().getObject().toString();
-            String similarDrugName = model.getResource(similarDrugURI).getProperty(nameProp).getString();
+//            String similarDrugURI = similarDrugs.nextStatement().getObject().toString();
+//            String similarDrugName = model.getResource(similarDrugURI).getProperty(nameProp).getString();
+            String similarDrugName = similarDrugs.nextStatement().getResource().getProperty(nameProp).getString();
             System.out.println(similarDrugName);
         }
 
@@ -46,8 +47,9 @@ public class Task3 {
         System.out.printf("\tSimilar drugs to %s (%s) - %.2fMKD:\n", oneDrugName, oneDrug.getURI(), price);
         similarDrugs = oneDrug.listProperties(similarToProp);
         while (similarDrugs.hasNext()){
-            String similarDrugURI = similarDrugs.nextStatement().getObject().toString();
-            Resource similarDrug = model.getResource(similarDrugURI);
+//            String similarDrugURI = similarDrugs.nextStatement().getObject().toString();
+//            Resource similarDrug = model.getResource(similarDrugURI);
+            Resource similarDrug = similarDrugs.nextStatement().getResource();
             String similarDrugName = similarDrug.getProperty(nameProp).getString();
             double similarDrugPrice = similarDrug.getProperty(priceProp).getDouble();
             System.out.printf("%s (%.2fMKD)\n", similarDrugName, similarDrugPrice);
